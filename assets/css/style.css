@@ -1,19 +1,96 @@
+/* Universal Selector */
 * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Element Selector */
 body {
+    font-family: Arial, sans-serif;
     background-color: #d9dcd6;
 }
 
+/* Class Selector */
 .header {
+    position: fixed; /* Fix the header to the top of the page */
+    top: 0; 
+    left: 0; 
+    width: 100%; 
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
+
+
+nav ul {
+    list-style-type: none; /* Remove bullet points from list items */
+}
+
+nav li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between links */
+}
+
+nav li:last-child {
+    margin-right: 0; /* Remove right margin from the last list item to prevent extra spacing */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set link color */
+    font-size: 18px; /* Set font size for links */
+}
+
+nav a:hover {
+    color: #555; /* Set link color when hovering */
+}
+
+
+nav a:hover {
+    color: #6a0d0d;
+}
+
+.main-heading {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.secondary-heading {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
 
 .header h1 {
     display: inline-block;
@@ -28,7 +105,7 @@ body {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 20px;
 }
 
@@ -82,23 +159,23 @@ p {
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:  Arial, sans-serif;
     background-color: #2589bd;
 }
 
 .benefit-lead {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: #d51919;
 }
 
 .benefit-brand {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: #110101;
 }
 
 .benefit-cost {
     margin-bottom: 32px;
-    color: #ffffff;
+    color: #1d1ac6;
 }
 
 .benefit-lead h3 {
@@ -138,27 +215,27 @@ p {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #0072bb;
-    color: #ffffff;
+    color: #a60d0d;
 }
 
 .online-reputation-management {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #0072bb;
-    color: #ffffff;
+    color: #090404;
 }
 
 .social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:Arial, sans-serif;
     background-color: #0072bb;
-    color: #ffffff;
+    color: #250c81;
 }
 
 .search-engine-optimization img {
@@ -198,4 +275,3 @@ p {
 .footer h2 {
     font-size: 20px;
 }
-
